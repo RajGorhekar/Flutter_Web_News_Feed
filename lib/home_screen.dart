@@ -172,6 +172,16 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         children: <Widget>[
            NavBar(mediaQuery: mediaQuery,),
+           new SizedBox(
+            height: 10.0,
+            child: new Center(
+              child: new Container(
+                margin: new EdgeInsetsDirectional.only(start: 15.0, end: 15.0),
+                height: 3.0,
+                color: Colors.blue[900],
+              ),
+            ),
+          ),
           _articles.length > 0
               ? _buildArticlesGrid(mediaQuery)
               : Center(
